@@ -43,5 +43,17 @@ const recortarString = (validacion, cadena, num ) => {
     }
 }
 
-console.log(recortarString(validacion, cadena, numCaracter))
+// console.log(recortarString(validacion, cadena, numCaracter))
 
+
+// 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+
+//caracter por el cual se quiere dividir la cadena
+let divisor = ' ';
+
+const convertirCadenaAString = (validacion, caracter, cadena) => {
+    let result = validacion ? cadena.split(caracter) : 'El tipo de dato ingresado no es valido, debe ingresar una cadena de texto';
+    return result;
+}
+
+console.log(convertirCadenaAString(validacion, divisor, cadena));
