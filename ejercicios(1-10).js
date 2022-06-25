@@ -56,4 +56,18 @@ const convertirCadenaAString = (validacion, caracter, cadena) => {
     return result;
 }
 
-console.log(convertirCadenaAString(validacion, divisor, cadena));
+// console.log(convertirCadenaAString(validacion, divisor, cadena));
+
+// 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+
+let nVeces = 4;
+
+const repetirTexto = (cadena, nVeces) => {
+    let text = '';
+    for( let i=0; i < nVeces; i++ ){
+        text += cadena + ' ';
+    }
+    return text;
+}
+
+console.log(repetirTexto(cadena, nVeces));
